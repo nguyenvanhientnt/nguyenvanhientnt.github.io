@@ -1,0 +1,53 @@
+body{
+	font-family: arial;
+	font-size: 14px;
+	width: 1000px;
+	margin: auto;
+}
+
+h1{
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	color: #CD0000;
+}
+
+.col{
+	margin: auto;
+}
+
+img{
+	width: 500px;
+	margin-left: 250px;
+}
+
+.content{
+	text-align: center;
+}
+
+.content a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+}
+
+.content a:hover{
+	color: #CD0000;
+}
+
+span{
+	font-weight: bold;
+	color: #CD0000;
+	font-size: 20px;
+}
+
+.detail{
+	margin-top: 50px;
+
+}
+p{
+	font-size: 16px;
+	padding-top: 10px;
+	padding-left: 200px;
+}
