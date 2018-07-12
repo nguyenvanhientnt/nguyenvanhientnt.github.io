@@ -1,0 +1,104 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: arial;
+	max-width: 1000px;
+	margin: auto;
+	background-color: white;
+}
+
+header{
+	margin-top: 10px;
+
+}
+.top_nav{
+	background-color: white;
+	height: 135px;
+	position: relative;
+	width: 100%;
+}
+.top_nav img{
+	width: 20%;
+	padding-top: 10px;
+	padding-left: 30px;
+	display: block;
+}
+i{
+	color: red;
+	font-size: 22px;
+	top: 60px;
+	right: 50px;
+	position: absolute;
+}
+
+.menu{
+	height: 50px;
+	background-color: red;
+}
+
+.menu_nav{
+	padding: 0px;
+	margin: 0px;
+
+}
+.list{
+	list-style: none;
+	float: left;
+	width: 16.66%;
+}
+.menu .menu_nav .list a{
+	color: white;
+	line-height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+.menu .menu_nav .list a:hover{
+	color: #000000;
+}
+
+.main{
+	width: 100%;
+}
+
+.product{
+	width: 100%;
+	margin-top: 2%;
+}
+
+.img{
+	width: 32%;
+	height: 250px;
+	float: left;	
+	background-color: white;
+}
+
+.img:hover{
+	box-shadow: 1px 1px 5px 3px rgba(255,0,0,0.6);
+	transform: translate(-2px,-2px);
+	
+}
+
+.img2{
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.img img{
+	width: 100%;
+}
+.content{
+	text-align: center;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom:10px; 
+	padding-top:10px;
+}
+.clear{
+	clear: both;
+}
