@@ -1,0 +1,163 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif, arial;
+	max-width: 1000px;
+	margin: auto;
+	background-color: white;
+	color: black;
+}
+
+header{
+	margin-top: 10px;
+
+}
+.top_nav{
+	background-color: white;
+	height: 135px;
+	position: relative;
+	width: 100%;
+}
+.top_nav img{
+	width: 20%;
+	padding-top: 10px;
+	padding-left: 30px;
+	display: block;
+}
+i{
+	color: red;
+	font-size: 22px;
+	top: 60px;
+	right: 50px;
+	position: absolute;
+}
+
+.menu{
+	height: 50px;
+	width: 100%;
+}
+.menu-left{
+	width: 20%;
+	float: left;
+}
+
+.menu-left-top{
+	width: 100%;
+	line-height: 50px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	background: #FB4D4D;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.menu-left-bottom{
+	width: 100%;
+}
+
+.menu-left1{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+}
+.list{
+	line-height: 50px;
+	padding: 0 18px;
+	white-space: nowrap;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.list:hover{
+    background: #FB4D4D;
+}
+
+.list:hover a{
+	color: blue;
+	font-weight: bold;
+	font-size: 15px;
+	text-shadow: 2px 1px 1px black; 
+}
+
+.list a{
+	color: black;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.menu-right{
+	width: 80%;
+	float: right;
+}
+.menu-right-content{
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+}
+.menu-right-t{
+	min-width: 25%;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	background: red;
+}
+.menu-right-t a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: black;
+}
+.menu-right-t:hover{
+	background: #FB4D4D;
+}
+
+.main{
+	width: 80%;
+	float: right;
+	height: 100%;
+}
+
+.product{
+	margin-top: 2%;
+}
+
+.img{
+	width: 32%;	
+	height: 250px;
+	margin-top: 2%;
+	background-color: white;
+	float: right;
+}
+
+.img:hover{
+	box-shadow: 1px 1px 5px 3px rgba(255,0,0,0.6);
+	transform: translate(2px,-5px);
+}
+
+.img2{
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+}
+
+.img img{
+	width: 100%;
+}
+.content{
+	text-align: center;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom:10px; 
+	padding-top:10px;
+}
+.icon-top{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+.icon{
+	width: 70px;
+}
