@@ -98,7 +98,7 @@ i{
 	list-style-type: none;
 }
 .menu-right-t{
-	min-width: 25%;
+	width: 25%;
 	float: left;
 	line-height: 50px;
 	text-align: center;
@@ -108,6 +108,7 @@ i{
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 16px;
+	white-space: nowrap;
 	color: black;
 }
 .menu-right-t:hover{
@@ -159,5 +160,5 @@ i{
 	right: 20px;
 }
 .icon{
-	width: 70px;
+	width: 50px;
 }
