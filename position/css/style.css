@@ -46,15 +46,29 @@ i{
 	width: 100%;
 	line-height: 50px;
 	height: 50px;
+	background: red;
+	position: relative;
+	text-align: center;
+}
+.content-menu{
+	color: black;
 	font-size: 20px;
 	font-weight: bold;
-	background: #FB4D4D;
-	text-align: center;
 	white-space: nowrap;
+	text-decoration: none;
+}
+.menu-left-top:hover{
+	background: #FB4D4D;
+}
+
+.menu-left-top:hover .menu-left-bottom{
+	display: block;
 }
 
 .menu-left-bottom{
 	width: 100%;
+	display: none;
+	position: absolute;
 }
 
 .menu-left1{
@@ -66,7 +80,8 @@ i{
 }
 .list{
 	line-height: 50px;
-	padding: 0 18px;
+	text-align: left;
+	padding: 0 20px;
 	white-space: nowrap;
 	border-bottom: 1px solid #e8e8e8;
 }
