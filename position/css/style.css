@@ -5,10 +5,10 @@ body{
 	font-family: sans-serif, arial;
 	max-width: 1000px;
 	margin: auto;
-	background-color: white;
+	background-color: #F7F6F3;
 	color: black;
 }
-
+/* header */
 header{
 	margin-top: 10px;
 
@@ -28,29 +28,31 @@ header{
 i{
 	color: red;
 	font-size: 22px;
-	top: 60px;
+	top: 50px;
 	right: 50px;
 	position: absolute;
 }
-
-.menu{
-	height: 50px;
-	width: 100%;
-}
-.menu-left{
+/* end header */
+/* main left */
+.main-left{
 	width: 20%;
+	margin-top: 0px;
+	display: inline-block;	
+}
+.menu-left2{
+	width: 100%;
 	float: left;
-	position: relative;
 }
 
 .menu-left-top{
 	width: 200px;
 	line-height: 50px;
 	height: 50px;
-	background: red;
+	background: #FB4D4D;
 	text-align: center;
-
+	position: relative;
 }
+
 .content-menu{
 	color: black;
 	font-size: 20px;
@@ -58,16 +60,12 @@ i{
 	white-space: nowrap;
 	text-decoration: none;
 }
-.menu-left-bottom{
-	position: relative;
-}
-
 .nav-menu{
 	width: 200px;
-	position: absolute;
-	top: 2px;
-	left: 0;
 	border: 1px solid #A4A4A4;
+	position: absolute;
+	top: 52px;
+	left: 0;
 }
 
 .menu-left1{
@@ -101,9 +99,16 @@ i{
 	text-decoration: none;
 }
 
-.menu-right{
+/* end mainleft */
+
+/* mainright */
+.main-right{
 	width: 80%;
 	float: right;
+	margin-top: 0;
+}
+.menu-right{
+	width: 100%;
 }
 .menu-right-content{
 	margin:0;
@@ -126,12 +131,6 @@ i{
 }
 .menu-right-t:hover{
 	background: #FB4D4D;
-}
-
-.main{
-	width: 80%;
-	float: right;
-	height: 100%;
 }
 
 .product{
