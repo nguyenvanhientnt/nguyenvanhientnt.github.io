@@ -40,15 +40,16 @@ i{
 .menu-left{
 	width: 20%;
 	float: left;
+	position: relative;
 }
 
 .menu-left-top{
-	width: 100%;
+	width: 200px;
 	line-height: 50px;
 	height: 50px;
 	background: red;
-	position: relative;
 	text-align: center;
+
 }
 .content-menu{
 	color: black;
@@ -57,18 +58,16 @@ i{
 	white-space: nowrap;
 	text-decoration: none;
 }
-.menu-left-top:hover{
-	background: #FB4D4D;
-}
-
-.menu-left-top:hover .menu-left-bottom{
-	display: block;
-}
-
 .menu-left-bottom{
-	width: 100%;
-	display: none;
+	position: relative;
+}
+
+.nav-menu{
+	width: 200px;
 	position: absolute;
+	top: 2px;
+	left: 0;
+	border: 1px solid #A4A4A4;
 }
 
 .menu-left1{
@@ -76,14 +75,13 @@ i{
 	padding: 0;
 	margin: 0;
 	width: 100%;
-	background-color: white;
+	background-color: #FBEFEF;
 }
 .list{
 	line-height: 50px;
 	text-align: left;
 	padding: 0 20px;
 	white-space: nowrap;
-	border-bottom: 1px solid #e8e8e8;
 }
 
 .list:hover{
