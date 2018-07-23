@@ -1,0 +1,219 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif, arial;
+	margin:0;
+	
+	
+}
+.wrap{
+	animation: g-back 8s ease infinite;
+	-webkit-animation: g-back 8s ease infinite;
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	background: linear-gradient(90deg,#3B3C43 40%,#F7F0F6 50%,#3B3C43 60%);
+	background-size: 250% 200%;
+	height: 800px;
+	width: 100%;
+}
+
+@keyframes g-back{
+	0%{background-position: 0% 0%;}
+	40%,50%,55%{background-position: 50% 0%;}
+	100%{background-position: 100% 0%;}
+}
+
+@-webkit-keyframes back{
+	0%{background-position: 0% 0%;}
+	40%,50%,55%{background-position: 50% 0%;}
+	100%{background-position: 100% 0%;}
+}
+
+.content{
+	position: absolute;
+	top: 40%;
+	left: 36%;
+	-webkit-animation: bounceInDown 8s ease-in-out infinite;
+	animation: bounceInDown 8s ease-in-out infinite;
+}
+
+.content img{
+	width: 400px;
+}
+
+@-webkit-keyframes bounceInDown {
+	0%{opacity: 0;}
+	40%{
+    opacity: 0;
+    	-webkit-transform: translate3d(0, -50px, 0);
+    	transform: translate3d(0, -50px, 0);}
+	60% {
+    opacity: 1;
+    	-webkit-transform: translate3d(0, 25px, 0);
+    	transform: translate3d(0, 25px, 0);}
+	75% {
+   		-webkit-transform: translate3d(0, -10px, 0);
+		transform: translate3d(0, -10px, 0);}
+	100% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);}
+  
+}
+
+@keyframes bounceInDown {
+  0%{opacity: 0;}
+  40% {
+  	opacity: 0; 
+  	-webkit-transform: translate3d(0, -50px, 0); 
+  	transform: translate3d(0, -50px, 0);}
+  60% {
+  	opacity: 1;
+  	-webkit-transform: translate3d(0, 25px, 0);
+  	transform: translate3d(0, 25px, 0);}
+  75% {-webkit-transform: translate3d(0, -10px, 0);
+  	transform: translate3d(0, -10px, 0);}
+  100% {-webkit-transform: translate3d(0, 5px, 0);
+  	transform: translate3d(0, 5px, 0);}
+}
+
+
+.ufo{
+	width: 300px;
+	position: absolute;
+	top: 15%;
+	left: -100%;
+	animation: ufot 8s ease-in-out infinite;
+	-webkit-animation: ufot 8s ease-in-out infinite;
+}
+.ufo img{
+	width: 100%;
+}
+
+@keyframes ufot{
+	from,0%{left: 120%;}
+	40%,50%,60%{left: 39%;}
+	to,100%{left: -100%;}
+}
+
+@-webkit-keyframes ufot{
+	from,0%{left: 120%;}
+	40%,50%,60%{left: 39%;}
+	to,100%{left: -100%;}
+}
+
+.gift1{
+	width: 250px;
+	position: absolute;
+	top: 85%;
+	left: 60%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift1 img{
+	width: 100%;
+}
+.gift2{
+	width: 200px;
+	position: absolute;
+	top: 85%;
+	left: 17%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift2 img{
+	width: 100%;
+}
+.gift3{
+	width: 250px;
+	position: absolute;
+	top: 71%;
+	left: 0%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift3 img{
+	width: 100%;
+}
+.gift4{
+	width: 250px;
+	position: absolute;
+	top: 92%;
+	left: 30%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift4 img{
+	width: 100%;
+}
+.gift5{
+	width: 250px;
+	position: absolute;
+	top:70%;
+	left: 83%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift5 img{
+	width: 100%;
+}
+.gift6{
+	width: 250px;
+	position: absolute;
+	top: 84%;
+	left: 45%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift6 img{
+	width: 100%;
+}
+.gift7{
+	width: 180px;
+	position: absolute;
+	top: 90%;
+	left: 70%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift7 img{
+	width: 100%;
+}
+.gift8{
+	width: 250px;
+	position: absolute;
+	top: 84%;
+	left: 81%;
+	-webkit-animation: gif 5s ease-in-out;
+	animation: gif 5s ease-in-out;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+}
+.gift8 img{
+	width: 100%;
+}
+@keyframes gif {
+	100%{top: 85%; opacity: 1;}
+	50%{top: 50%; opacity: 0;}
+	0%{top: -110%; opacity: 0;}
+}
+
+@-webkit-keyframes gif {
+	100%{top: 85%; opacity: 1;}
+	50%{top: 50%; opacity: 0;}
+	0%{top: -110%; opacity: 0;}
+}
