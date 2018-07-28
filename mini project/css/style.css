@@ -1,0 +1,287 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif, arial;
+}
+header{
+	min-width: 100%;
+	margin-top: 10px;
+	height: 50em;
+	animation: ban 15s infinite;
+	-webkit-animation: ban 15s infinite;
+	background-repeat: no-repeat;
+	outline: 0;
+}
+
+@-webkit-keyframes ban{
+	0%{
+		background-image: url('../image/banner1.jpg');
+		background-size: contain;
+	}
+	20%{
+		background-image: url('../image/banner4.jpg');
+		background-size: contain;
+	}
+	50%{
+		background-image: url('../image/banner2.jpg');
+		background-size: contain;
+	}
+	75%{
+		background-image: url('../image/banner.jpg');
+		background-size: contain;
+	}
+	100%{
+		background-image: url('../image/banner3.jpg');
+		background-size: contain;
+	}
+}
+@keyframes ban{
+	0%{
+		background-image: url('../image/banner1.jpg');
+		background-size: contain;
+	}
+	20%{
+		background-image: url('../image/banner4.jpg');
+		background-size: contain;
+	}
+	50%{
+		background-image: url('../image/banner2.jpg');
+		background-size: contain;
+	}
+	75%{
+		background-image: url('../image/banner.jpg');
+		background-size: contain;
+	}
+	100%{
+		background-image: url('../image/banner3.jpg');
+		background-size: contain;
+	}
+}
+.nav{
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+.logo{
+	width: 20%;
+	float: left;
+	padding: 10px 10px;
+}
+.logo img{
+	width: 100%;
+}
+.menu{
+	float: right;
+	width: 80%;
+	height: auto;
+	padding-top: 20px;
+}
+.nav-menu{
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.list{
+	display: block;
+	float: right;
+	width: 20%;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	background: #666666;
+	
+}
+.list a{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: white;
+	white-space: nowrap;
+	letter-spacing: 1px;
+}
+.list:hover{
+	opacity: 0.7;
+}
+
+.backtotop{
+	display: block;
+	position: fixed;
+	bottom: 0;
+	right: 5px;
+}
+
+.backtotop i{
+	width: 40px;
+	height: 40px;
+	font-weight: bold;
+	font-size: 30px;
+	color: #00ff;
+	float: right;
+	background: #e5e5e5;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	padding-top: 4px;
+	opacity: 1;
+}
+.backtotop i:hover{
+	opacity: 0.6;
+}
+main{
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 40px;
+}
+.pro{
+	width: 100%;
+}
+#prog{
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.progm{
+	margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td{
+	font-size: 20px;
+}
+th{
+	font-size: 20px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.time{
+	width: 20%;
+}
+.even{
+	width: 80%;
+}
+.speakers{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+#bk{
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.content{
+	width: 100%;
+	margin-top: 30px;
+}
+.conten{
+	width: 33.3333%;
+	float: left;
+	padding: 20px;
+}
+.conten img{
+	width: 100%;
+	height: 200px;
+}
+.conte{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.cl{
+	clear: both;
+}
+.ares{
+	width: 100%;
+	padding-top: 30px;
+}
+#re{
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+	margin-top: 20px;
+}
+.res{
+	text-align: center;
+	font-size: 1.2em;
+	margin-top: 30px;
+}
+.ress{
+	width: 100%;
+	margin-left: 2.5%;
+	
+}
+.ress iframe{
+	border: 2px solid #3f7f00;
+	width: 95%;
+	height: 400px;
+}
+.form{
+	margin-top: 30px;
+}
+#creat{
+	text-align: center;
+	font-weight: bold;
+	font-size: 35px;
+}
+.crea{
+	margin-top: 30px;
+}
+.crea iframe{
+	width: 100%;
+	height: 600px;
+}
+
+
+footer{
+	background: #222428;
+	min-width: 1000px;
+	height: 250px;
+}
+.thongtin{
+	width: 1000px;
+	margin: auto;
+}
+.address{
+	margin-top: 50px;
+	width: 34%;
+	float: left;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+.contact{
+	margin-top: 50px;
+	width: 32%;
+	float: left;
+}
+.descrition{
+	margin-top: 50px;
+	width: 30%;
+	float: left;
+}
+.descrition p, .address p, .contact p{
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	padding-left: 20px;
+}
+.descrition a, .address a, .contact a{
+	color: #e5e5e5;
+	font-size: 16px;
+	text-decoration: none;
+	padding-left: 20px;
+	opacity: 0.8;
+}
+.descrition a:hover, .address a:hover, .contact a:hover{
+	font-size: 16px;
+	text-decoration: underline;
+}
