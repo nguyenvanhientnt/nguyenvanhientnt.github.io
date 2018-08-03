@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bài tập vòng lặp for</title>
+</head>
+<body>
+	<!-- bài 1 -->
+	<script>
+		
+		function giaiThua(n) {
+			var ketQua = 1;
+			for (var i = 1; i <= n; i++) {
+				ketQua = ketQua * i;
+			}
+			document.write("bài 1, kết quả của giai thừa là: " + ketQua + "<br><br>");
+		}
+		giaiThua(4);
+	</script>
+	<!-- bài 2 -->
+	<script>
+		function reverse(s) {
+    		var ketQua = '';
+   			for (var i = s.length - 1; i >= 0; i--){
+        		ketQua = ketQua + s[i];
+   			}
+    		return document.write("bài 2, kết quả của chuỗi khi bị đảo ngược là: " + ketQua + "<br><br>");
+		}
+		reverse("nobachic");
+	</script>
+	<!-- bài 3 -->
+	<script>
+		function duplicate(s){
+  			var ketQua = '';
+ 			for(var i = s.length-2; i<=10; i++ ){
+   				ketQua = ketQua + s + "-";
+    
+  			}
+  			return document.write("bài 3, kết quả sao chép chuỗi số lên mười lần: " + ketQua.slice(0,ketQua.length-1) + "<br><br>");
+		}
+		duplicate("123")
+	</script>
+	<!-- bài 4 -->
+	<script>
+		function chuoi(s){
+   			s.sort(function(a,b){return a.localeCompare(b)});
+   			for(var i = 0; i < s.length; i++){
+      			document.write( ` vị trí ${i+1} là ${s[i]}`)
+   			}
+
+		}
+		chuoi(["ha","nhi","at","phong"]);
+	</script>
+	<!-- bài 5 -->
+	<script>
+		function double(number){
+ 			var res=[];
+  			for(var i = 0; i <= number.length-1; i++){
+   				res[i] = number[i] * 2;
+  			}
+  			document.write("<br><br>bài 5, Kết quả khi nhân đôi phần tử của mảng là: "+ res + "<br><br>");
+		}
+		double([6,2,3]);
+	</script>
+	<!-- bài 6 -->
+	<script>
+		function surplus(number){
+ 			var res=[];
+  			for(var i = 0; i <= number.length-1; i++){
+   				res[i] = number[i] % 2;
+  			}
+  			document.write("bài 6, Kết quả khi chia phần tử của 1 mảng cho 2 lấy số dư là: "+ res);
+		}
+		surplus([13,2,3,5]);
+	</script>
+</body>
+</html>
