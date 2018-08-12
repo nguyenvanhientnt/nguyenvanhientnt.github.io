@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<!-- bài 1 -->
+
+	<script>
+		function printTrigangle(n){
+			let str = '';
+
+  			for (let i = 0; i < n; i ++) {
+    			for (let j = 0; j < i+1; j++) {
+     		 // In ra n dấu *
+      				str += ' * ';
+    			}
+
+   			 // In ra dấu xuống dòng
+    		str += '<br/>';
+  			}
+ 			return document.write(str);
+		}
+		printTrigangle(4);
+	</script>
+
+	<!-- bài 2 -->
+
+	<script>
+		function printEmptyRectangle(a, b) {
+  			let str = "";
+  			for (let i = 1; i <= b; i++) {
+    			for (let j = 1; j <= a; j++) {
+      				if (i ==b-2 || j==a || j ==a-4 || i==b) {
+       					str += "*";
+      				}else {
+        				
+        				str += "&nbsp;&nbsp;";
+      				}
+    			}
+    			str += "<br>";
+  			}
+  			return document.write(str);
+		}
+		printEmptyRectangle(5, 3);
+	</script>
+
+	<!-- bài 3 -->
+
+	<script>
+		function printSpecialTrigangle(n){
+			let str = '';
+  			for (let i = n; i >=1; i --) {
+    			for (let j = 0; j < n*2-1; j++) {
+     				if(i==n || j==n*2-4 ){
+     					str += ' * ';
+     				}else if(i==n-1 && j<=n*2-3 && j>=n*2-5){
+     					str += ' * ';
+     				}else{
+     					str += "&nbsp;&nbsp;";
+     				}
+      				
+    			}
+   			 // In ra dấu xuống dòng
+    		str += '<br/>';
+  			}
+ 			return document.write(str);
+		}
+		printSpecialTrigangle(3);
+	</script>
+
+	<!-- bài 4 -->
+
+	<script>
+		function printX(n){
+			let str = '';
+  			for (let i = 1; i <=n; i++) {
+    			for (let j = 1; j <= n; j++) {
+    				if(i==n-4&&j>n-4&&j<n){//dòng 1
+     					str += "&nbsp;&nbsp;";
+     				}else if(i==n-3&&j!=n-1&&j!=n-3){//dòng 2
+     					str += "&nbsp;&nbsp;";
+     				}else if(i==n-2&&j!=n-2){//dòng 3
+     					str += "&nbsp;&nbsp;";
+     				}else if(i==n-1&&j!=n-3&&j!=n-1){//dòng 4
+     					str += "&nbsp;&nbsp;";
+     				}else if(i==n&&j>n-4&&j<n){//dòng 5
+     					str += "&nbsp;&nbsp;";
+     				}else{
+     					str += '*';
+     				}
+    			}
+    			str += '<br/>';
+  			}
+ 			return document.write(str);
+		}
+		printX(5);
+	</script>
+
+	<!-- bài 4 -->
+
+	<script>
+		function printButterfly(n){
+			let str = '';
+  			for (let i = 1; i <=n; i++) {
+    			for (let j = 1; j <= n; j++) {
+    				if(i==n-2||j==n||j==n-4){//dòng 1
+     					str += "*";
+     				}else if(j==n-3&&i<=n-1&&i>=n-3){
+     					str += "*";
+     				}else if(j==n-1&&i<=n-1&&i>=n-3){
+     					str += "*";
+     				}else{
+     					str += '&nbsp;&nbsp;';
+     				}
+    			}
+    			str += '<br/>';
+  			}
+ 			return document.write(str);
+		}
+		printButterfly(5);
+	</script>
+</body>
+</html>
