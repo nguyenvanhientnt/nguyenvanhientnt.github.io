@@ -87,7 +87,7 @@ main{
 	padding-top: 5px;
 }
 .back{
-	height: 3em;
+	height: 2em;
 	width: 100%;
 	background: #AACE15;
 	border: 1px solid #AACE15;
@@ -95,5 +95,6 @@ main{
 	font-size: 2em;
 	outline: 0;
 	letter-spacing: 2px;
+	border-radius: 50px;
 }
 

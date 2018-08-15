@@ -52,12 +52,13 @@ const dapan = document.getElementById('answer');
 const container = document.getElementById('container');
 const result = document.getElementById('result');
 const scr = document.getElementById('scor');
+const retry = document.getElementById('retry');
 
 function random(button){
 	const dap = res[number].answer;
-	console.log(dap);
+	// console.log(dap);
 	const check = button.value;
-	console.log(check);
+	// console.log(check);
 	if(check == dap){
 		score+=1;
 		console.log(score);
@@ -86,3 +87,7 @@ function chuyen(number){
 	choicd.value = res[number].choiceD;
 }
 chuyen(number);
+function comeback(input){
+	location.reload();
+}
+comeback(input);
