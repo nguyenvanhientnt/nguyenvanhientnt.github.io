@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+</head>
+<body>
+	<main>
+		<div id="container">
+			<div class="quiz">
+				<div id="quizx"></div>
+			</div>
+			<div class="ans">
+				<div class="answer">
+					<button class="answ" id="dapanA" value="1" onclick="random(this)">
+				</div>
+				<div class="answer">
+					<button class="answ" id="dapanB" value="2" onclick="random(this)">
+				</div>
+				<div class="answer">
+					<button class="answ" id="dapanC" value="3" onclick="random(this)">
+				</div>
+				<div class="answer">
+					<button class="answ" id="dapanD" value="4" onclick="random(this)">
+				</div>
+			</div>
+		</div>
+		<!-- retry -->
+		<div class="result" id="result">
+			<div class="imagere">
+				<img class="img" src="../image/retry.gif" alt="troll">
+			</div>
+			<div id="scor"></div>
+			<div class="text">Nhấn nút phía dưới</div>
+			<div class="icon">
+				<i class="fas fa-angle-double-down fa-2x"></i>
+			</div>
+			<div class="bac">
+				<input class="back" id="retry" type="button" value="retry"onclick="back()">
+			</div>
+		</div>
+	</main>
+	<script src="../js/quiz.js"></script>
+</body>
+</html>
