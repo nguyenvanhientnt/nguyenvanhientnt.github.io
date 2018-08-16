@@ -6,7 +6,7 @@ body{
 	padding:0;
 	font-family: sans-serif, arial;
 	background-image: url('../image/k.jpg');
-	background-size: 100% 120%	;
+	background-size: cover;
 }
 main{
 	max-width: 1000px;
