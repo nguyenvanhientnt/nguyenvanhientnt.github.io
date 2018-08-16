@@ -1,0 +1,28 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url('../image/f.jpg');
+}
+main{
+	max-width: 1000px;
+	margin: auto;
+}
+.image{
+	width: 70%;
+	margin: auto;
+}
+img{
+	width: 100%;
+}
+.text{
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+	padding-top: 1em;
+	color: #52DED2;
+	letter-spacing: 2px;
+}
