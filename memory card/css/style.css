@@ -1,0 +1,58 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	padding: 0;
+	font-family: sans-serif, arial;
+	background-image: url('../image/back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+main{
+	max-width: 900px;
+	margin: auto;
+	position: relative;
+}
+.can{
+	width: 100%;
+	margin-top: 3em;
+	position: relative;
+}
+.col{
+	width: 100%;
+	
+}
+.card{
+	width: 12.5%;
+	position: relative;
+	float: left;
+}
+.before{
+	width: 100%;
+	position: absolute;
+	transform: rotateY(180deg);
+	padding: 10px;
+}
+.after{
+	width: 100%;
+	padding: 10px;
+}
+.card:hover .after{
+	transform: rotateY(180deg);
+}
+.card:hover .before{
+	transform: rotateY(0deg);
+}
+.before, .after{
+	transition: all 1s;
+	backface-visibility: hidden;
+}
+img{
+	width: 100%;
+	border-radius: 8px;
+}
+.clear{
+	clear: both;
+}
