@@ -3,7 +3,7 @@ img = img.concat(img); //nhân đôi mảng.
 shuffle(img); //tạo hàm random current đổi vị trước khi load css
 let html = '';
 for(let i = 0; i<=img.length-1; i++){
-    html += '<div class="col">' + '<div class="card">' + '<div class="before"><img src="../image/'+img[i]+'.jpg"></div>' + '<div class="after"><img src="../image/before2.jpg"></div>' + '</div></div>';
+    html += '<div class="card">' + '<div class="before"><img src="../image/'+img[i]+'.jpg"></div>' + '<div class="after"><img src="../image/before2.jpg"></div>' + '</div>';
 }
 $('.can').html(html);
 
