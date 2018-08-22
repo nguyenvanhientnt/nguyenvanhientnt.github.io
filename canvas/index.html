@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Canvas</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <canvas id="game" width="800" height="500" style="background: black;"></canvas>
+    <script>
+        let canvas = document.getElementById('game');
+        let ctx = canvas.getContext('2d');
+        
+        const piece = new component(50,50,'red',50,50);
+        const column1 = new component(350,canvas.height-150,'blue',50,150);
+        const column2 = new component(450,canvas.height-200,'blue',50,200);
+        const column3 = new component(550,canvas.height-100,'blue',50,100);
+        column1.draw();
+        column2.draw();
+        column3.draw();
+        piece.draw();
+        
+        function component(x,y,color,width,height){
+          this.x=x;
+          this.y=y;
+          this.width=width;
+          this.height=height;
+          this.color=color;
+          this.draw = function(){
+            ctx.fillStyle = this.color;
+            ctx.fillRect(this.x,this.y,this.width,this.height);
+          }
+        }
+
+
+    </script>
+</body>
+</html>
