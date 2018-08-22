@@ -11,7 +11,7 @@ header{
 	height: 80px;
 	width: 100%;
 	background: #4c4c4c;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .top{
 	margin: auto;
@@ -86,9 +86,6 @@ nav{
 	color: #67c4da;
 }
 
-
-
-
 .seach{
 	float: right;
 	display: inline-flex;
@@ -132,26 +129,132 @@ main{
 }
 .main-left{
 	width: 70%;
-	height: 200px;
-	background: blue;
+	height: 350px;
 	float: left;
+}
+
+.main-l{
+	width: 100%;
+	padding: 0 10px 10px 0;
+}
+.baner{
+	width: 100%;
+	height: 280px;
+}
+.baner img{
+	width: 100%;
+
+}
+.list-baner{
+	width: 100%;
+	height: 70px;
+}
+.list-bane{
+	width: 20%;
+	float: left;
+}
+.list-bane1 img{
+	padding: 5px 5px 0 0;
+}
+.list-bane2 img, .list-bane3 img, .list-bane4 img{
+	padding: 5px 5px 0 5px;
+}
+.list-bane5 img{
+	padding: 5px 0 0 5px;
+}
+.list-bane img{
+	width: 100%;
+	height: 70px;
 }
 .main-right{
 	width: 30%;
 	height: 200px;
-	background: pink;
-	float: left;
+	float: right;
 }
-.main-l{
-	width: 100%;
-	
-}
-
 .main-r{
 	width: 100%;
+	padding-bottom:10px;
+	padding-left: 10px;
 }
+.theme-content{
+	width: 100%;
+	padding: 0 0 5px 0;
+}
+.theme-content a{
+	text-decoration: none;
+	color: #67c4da;
+	font-size: 1.3em;
+}
+.theme-content a:hover{
+	color: #D0B5BA;
+	padding-left: 0.5em;
+}
+.theme{
+	width: 100%;
 
+}
+.theme-detail{
+	width: 100%;
+	padding-top: 5px;
 
+}
+.theme-detail img{
+	width: 100%;
+	height: 80px;
+}
+/* song hot */
+.song-hot{
+	width: 70%;
+	float: left;
+	padding-top: 1em;
+	padding-right: 10px;
+}
+.song-content{
+	width: 100%;
+	padding: 0 0 10px 0;
+}
+.song-content a{
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #67c4da;
+}
+.song-content a:hover{
+	color: #D0B5BA;
+	padding-left: 0.5em;
+}
+.song{
+	width: 100%;
+}
+.song-col1{
+	width: 50%;
+	float: left;
+}
+.song-col2{
+	width: 50%;
+	float: left;
+}
+.song-detail{
+	width: 100%;
+	padding: 5px 0 5px 0;
+}
+.song-detai{
+	width: 20%;
+	float: left;
+
+}
+.song-detail img{
+	width: 100%;
+}
+.song-conten a{
+	float: left;
+	text-decoration: none;
+	color: #4c4c4c;
+	text-indent: 0.8em;
+	padding-top: 0.8em;
+}
+.song-conten a:hover{
+	color: #67c4da;
+}
 
 
 /* footer */
