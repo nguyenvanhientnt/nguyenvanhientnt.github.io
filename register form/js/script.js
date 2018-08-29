@@ -1,18 +1,30 @@
 
-function decodeURIComponent(param){
+function GetURLParameter(param){
 	let pageurl = window.location.search.substring(1);
-	let vari = pageurl.split('&');
-	for (var i = 0; i < vari.length; i++) {
-        var parname = vari[i].split('=');
+	
+	let uri = decodeURIComponent(pageurl);//chuyen ky tu dac biet
+	let haki = uri.replace(/\+/g, ' ');
+	let vari = haki.split('&');//cắt bỏ &
+	for (let i = 0; i < vari.length; i++) {
+        let parname = vari[i].split('=');//cắt bỏ =
         if (parname[0] == param) {
             return parname[1];
         }
+
     }
 }
-let name = decodeURIComponent('name');
-let username = decodeURIComponent('username');
-let password = decodeURIComponent('password');
-document.write(name);
-console.log(username);
-console.log(name);
-console.log(password)
+let birthday = GetURLParameter('birthday');
+let name = GetURLParameter('name');
+let username = GetURLParameter('username');
+let password = GetURLParameter('password');
+let address = GetURLParameter('address');
+let phone = GetURLParameter('sdt');
+let gender = GetURLParameter('gender');
+$('#lastname').text(name);
+$('#usernames').text(username);
+$('#passwords').text(password);
+$('#sexs').text(gender);
+$('#aress').text(address);
+$('#phones').text(phone);
+$('#birthdays').text(birthday);
+
