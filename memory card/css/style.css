@@ -28,25 +28,27 @@ main{
 	width: 12.5%;
 	position: relative;
 	float: left;
+	/*transition: 400ms;*/
+}
+.card.flipped .before{
+	transform: rotateY(0);
+}
+.card.flipped .after{
+	transform: rotateY(180deg);
 }
 .before{
 	width: 100%;
 	position: absolute;
-	transform: rotateY(180deg);
 	padding: 10px;
+	transform: rotateY(180deg);
 }
 .after{
 	width: 100%;
 	padding: 10px;
-}
-.card:hover .after{
-	transform: rotateY(180deg);
-}
-.card:hover .before{
-	transform: rotateY(0deg);
+	transform: rotateY(0);
 }
 .before, .after{
-	transition: all 1s;
+	transition: all .4s;
 	backface-visibility: hidden;
 }
 img{
