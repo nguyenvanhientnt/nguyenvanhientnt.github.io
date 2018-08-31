@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <canvas id="game" width="693" height="498"></canvas>
+    <script>
+        const canvas = document.getElementById('game');
+        const ctx = canvas.getContext('2d');
+        let cvW = canvas.width;
+        let cvH = canvas.height;//kich thuoc cua canvas
+        let bX=50;
+        let bY=100;;
+        let gravity = 1.5;
+        let gap = 200;
+        let pipe = [];
+        pipe[0]={
+            dx: canvas.width,
+            dy: 0
+        }
+        let sum = 0;
+        const bg = new Image();
+        const bird = new Image();
+        const pipeNorth = new Image();
+        const pipeSouth = new Image();
+        bg.src = "../image/bg.jpg";
+        bird.src="../image/bird.png";
+        pipeNorth.src="../image/pipeNorth.png";
+        pipeSouth.src="../image/pipeSouth.png";
+        function Component(img,x,y,width,height){
+            this.img = img;
+            this.x = x;
+            this.y= y;
+            this.width = width;
+            this.height = height;
+        }
+        Component.prototype.drawI = function() {
+           ctx.drawImage(this.img,this.x,this.y,this.width,this.height);
+        }
+        window.addEventListener('click', handleEventClick);
+        function handleEventClick(e){
+            if (bY < 0) {
+                bY = 0;
+            }
+            bY+=-45;
+        }
+       
+        function update(){
+            const background = new Component(bg,0,0,cvW,cvH);
+            background.drawI();
+            const birdF = new Component(bird,bX,bY,bird.width,bird.height);
+            birdF.drawI();
+           
+            bY+=gravity;
+
+            for(let i=pipe.length-1; i >=0;i--){
+                let pipeN = new Component(pipeNorth,pipe[i].dx,pipe[i].dy,pipeNorth.width,pipeNorth.height);
+                let contant = pipeN.height+gap;
+                let pipeS = new Component(pipeSouth,pipe[i].dx,pipe[i].dy+contant,pipeSouth.width,canvas.height-gap);
+                pipe[i].dx--;
+
+                if(pipe[i].dx == 500){
+                    pipe.push({
+                        dx: canvas.width,
+                        dy: Math.floor(Math.random()*pipeN.height)-pipeN.height
+                     })
+                }
+                
+                
+                if(bY+bird.height > canvas.height){
+                    console.log('1');
+                    return;
+                }
+                if(bird.width+bX >= pipe[i].dx && bX <= pipe[i].dx + pipeNorth.height && (bY+bird.height >= pipe[i].dy + contant || bY <= pipe[i].dy + pipeNorth.height)){
+                    console.log('2');
+
+                    return;
+                }
+                pipeN.drawI();
+                pipeS.drawI();
+            }
+            requestAnimationFrame(update);
+        }
+        update();
+    </script>
+</body>
+</html>
