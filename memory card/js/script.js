@@ -3,6 +3,7 @@ let current = null;
 
 function flip(card){
     $(card).toggleClass('flipped');
+    document.getElementById('flip-sound').play();
     $(card).css('pointer-events', 'none');
 
     if(!current){
@@ -34,6 +35,7 @@ function flip(card){
                 current.css('visibility', 'hidden');
                 $(card).css('opacity', '0');
                 current.css('opacity', '0');
+                document.getElementById('correct-sound').play();
                 current = null;
             }, 200);
             // document.getElementById('').play();
