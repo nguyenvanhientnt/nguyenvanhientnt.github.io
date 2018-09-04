@@ -8,14 +8,57 @@
 </head>
 <body>
 	<main>
-		<div class="can">
+		<progress id="time" value="95" max="95"></progress>
+
+		<!-- play -->
+		<div class="can" id="play">
 			<div class="col">
 				
 			</div>
 			<div class="clear"></div>
 		</div>
+		<!-- end play -->
+		<!-- begin -->
+		<div class="begins" id="begin">
+			<h1>START</h1>
+			<div class="start">
+				<div class="main-start">
+					<span class="start-normal">
+						<input type="button" id="normal" value="NORMAL" onclick="normal()">
+					</span>
+					<span class="start-hard">
+						<input type="button" id="hard" value="HARD" onclick="hard()">
+					</span>
+				</div>
+			</div>
+		</div>
+		<!-- end begin -->
+
+		<!-- win -->
+		<div class="winners" id="winner">
+			<h1>YOU ARE VICTORY!</h1>
+			<div class="main-win">
+				<div class="main-detail">
+					<input type="button" id="win" value="REPLAY" onclick="comeback()">
+				</div>
+			</div>
+		</div>
+		<!-- end win -->
+		<!-- lose -->
+		<div class="winners" id="lose">
+			<h1>FAIL</h1>
+			<div class="main-win">
+				<div class="main-detail">
+					<input type="button" id="win" value="REPLAY" onclick="comeback()">
+				</div>
+			</div>
+		</div>
+		<!-- end lose -->
 	</main>
-	<audio id="bg-music">
+	<!-- end main -->
+
+
+	<audio id="bg-sound">
    		<source src="../audio/music.mp3" type="audio/mpeg">
 	</audio>
 
@@ -38,7 +81,7 @@
 	<audio id="lose-sound">
 	    <source src="../audio/lose.mp3" type="audio/mpeg">
 	</audio>
-	
+
 	<script src="../js/jquery-3.3.1.min.js"></script>
 	<script src="../js/script.js"></script>
 </body>
