@@ -10,54 +10,61 @@
 	<div class="wrap">
 		<div class="container">
 			<div class="title">Đăng Ký Tài Khoản</div>
-			<form action="result.html">
+			<form name="registration" onsubmit="return validate()" action="result.html">
 				<div class="name">
-					<input id="lastname" type="text" name="name" placeholder="     Họ Tên">
+					<div class="title-content">Họ và tên:</div>
+					<input id="lastname" type="text" name="lastname" placeholder="     Họ Tên">
+					<span id="errname" class="error"></span>
 				</div>
-
 
 				<div class="user">
+					<div class="title-content">Tên người dùng:</div>
 					<input id="username" type="text" name="username" placeholder="     Tên Người Dùng">
+					<span id="erruse" class="error"></span>
 				</div>
-
 
 				<div class="pass">
+					<div class="title-content">Mật khẩu:</div>
 					<input id="passwor" type="password" name="password" placeholder="     Mật Khẩu">
+					<span id="errpass" class="error"></span>
 				</div>
 
-
 				<div class="passw">
+					<div class="title-content">Xác nhận lại mật khẩu:</div>
 					<input id="passwords" type="password" name="opassword" placeholder="     Nhập Lại Mật Khẩu">
+					<span id="errpassw" class="error"></span>
 				</div>
 
 				<div class="birthday">
 					<input class="form-control" id="sel1" type="date" name="birthday" min="1970-01-01">
+					<span id="errbir" class="error"></span>
 				</div>
 
 				<div class="se">
-					<input type="radio" name="gender" value="male" id="male"><label for="male">Nam</label>
-					<input type="radio" name="gender" value="female" id="female"><label for="female">Nữ</label>
+					<input type="radio" name="gender" value="Nam" id="male"><label for="male">Nam</label>
+					<input type="radio" name="gender" value="Nữ" id="female"><label for="female">Nữ</label>
+					<span id="errgen" class="error"></span>
 				</div>
-
 
 				<div class="address">
+					<div class="title-content">Địa chỉ:</div>
 					<input id="adre" type="text" name="address" placeholder="    Địa Chỉ">
+					<span id="erradr" class="error"></span>
 				</div>
-
 
 				<div class="number-phone">
+					<div class="title-content">Số điện thoại:</div>
 					<input id="phone" type="text" name="sdt" placeholder="    Số Điện Thoại">
+					<span id="errphone" class="error"></span>
 				</div>
 
-
 				<div class="sbmi">
-					<input id="consb" type="submit" name="registration" value="Đăng Ký">
-					<div class="content"><a href="">Lost Your Password ?</a></div>
-					<div class="clear"></div>
+					<input id="consb" type="submit" value="Đăng Ký" onclick="validate()">
 				</div>
 			</form>
 		</div>
 	</div>
 	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/check.js"></script>
 </body>
 </html>

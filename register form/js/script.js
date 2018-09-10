@@ -10,11 +10,10 @@ function GetURLParameter(param){
         if (parname[0] == param) {
             return parname[1];
         }
-
     }
 }
 let birthday = GetURLParameter('birthday');
-let name = GetURLParameter('name');
+let name = GetURLParameter('lastname');
 let username = GetURLParameter('username');
 let password = GetURLParameter('password');
 let address = GetURLParameter('address');
