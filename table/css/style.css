@@ -5,6 +5,9 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif, arial;
+	background-image: url('../image/background.jpg');
+	background-image:  center center;
+	background-size: cover;
 }
 main{
 	max-width: 1000px;
@@ -20,7 +23,7 @@ caption{
 	font-size: 2em;
 	font-weight: bold;
 	margin-bottom: 20px;
-	color: #3867d6;
+	color: #2c3e50;
 }
 td, th{
 	border: 1px solid #7f7f7f;
@@ -34,9 +37,31 @@ th{
 	color: white;
 	background: #1e272e;
 }
-tr:nth-child(even){
-	background-color: #dddddd;
+.one{
+	background: #e74c3c;
 }
+.two{
+	background: #f39c12;
+}
+.three{
+	background: #FDA7DF;
+}
+.four{
+	background: #485460;
+}
+.five{
+	background: #cd6133;
+}
+.six{
+	background: #7d5fff;
+}
+.seven{
+	background: #20bf6b;
+}
+.eight{
+	background: #45aaf2;
+}
+
 img{
 	width: 100%;
 	height: 80px;
@@ -52,4 +77,11 @@ img{
 .email, .name, .skill{
 	width: 20%;
 	padding-left: 8px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+tr:hover{
+	background: #ecf0f1;
 }

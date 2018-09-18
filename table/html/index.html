@@ -8,80 +8,84 @@
 </head>
 <body>
 	<main>
-		<table>
+		<table id="myTable" class="container">
 			<caption>Members</caption>
 			<tr class="title">
-				<th class="avatar">Avatar</th>
-				<th class="name">Name</th>
-				<th class="skill">Skill</th>
-				<th class="email">Email</th>
-				<th class="phone">Phone</th>
+				<th class="avatar" onclick="sortTable(0)">Ảnh</th>
+				<th class="name" onclick="sortTable(1)">Tên</th>
+				<th class="skill" onclick="sortTable(2)">Tuyệt chiêu</th>
+				<th class="email" onclick="sortTable(3)">Sở thích</th>
+				<th class="phone" onclick="sortTable(4)">Cân nặng</th>
 			</tr>
 
-			<tr>
+			<tr class="one">
 				<td class="avatar"><img src="../image/larva-red.jpg" alt="larva-red"></td>
 				<td class="name">Red</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">bắt lặt Yellow</td>
+				<td class="email"><a href="">nổi cáu</a></td>
+				<td class="phone">1g</td>
 			</tr>
 
-			<tr>
+			<tr class="two">
 				<td class="avatar"><img src="../image/larva-yellow.jpg" alt="larva-yellow"></td>
 				<td class="name">Yellow</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">cứt mũi vô tận</td>
+				<td class="email"><a href="">cướp đồ ăn của Red và nghịch cứt mũi</a></td>
+				<td class="phone">3g</td>
 			</tr>
 
-			<tr>
+			<tr class="three">
 				<td class="avatar"><img src="../image/larva-pink.png" alt="larva-pink"></td>
 				<td class="name">Pink</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">bánh bèo vô dụng</td>
+				<td class="email"><a href="">thích Yellow</a></td>
+				<td class="phone">2g</td>
 			</tr>
 
-			<tr>
+			<tr class="four">
 				<td class="avatar"><img src="../image/larva-black.jpg" alt="larva-black"></td>
 				<td class="name">Black</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">cứng như đá</td>
+				<td class="email"><a href="">uýnh nhau</a></td>
+				<td class="phone">8g</td>
 			</tr>
 
-			<tr>
+			<tr class="five">
 				<td class="avatar"><img src="../image/larva-brown.png" alt="larva-brown"></td>
 				<td class="name">Brown</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">mùi hương nguyên tử</td>
+				<td class="email"><a href="">shjt</a></td>
+				<td class="phone">2.5g</td>
 			</tr>
 			
-			<tr>
+			<tr class="six">
 				<td class="avatar"><img src="../image/larva-violet.jpg" alt=""></td>
 				<td class="name">Violet</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">ninja tàn hình</td>
+				<td class="email"><a href="">gào thét</a></td>
+				<td class="phone">50g</td>
 			</tr>
 
-			<tr>
+			<tr class="seven">
 				<td class="avatar"><img src="../image/larva-rainbow.jpg" alt=""></td>
 				<td class="name">Rainbow</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">khỏe vô đối</td>
+				<td class="email"><a href="">yên bình trong vỏ</a></td>
+				<td class="phone">1000kg</td>
 			</tr>
 
-			<tr>
-				<td class="avatar"><img src="../image/larva-prussian.jpg" alt=""></td>
+			<tr class="eight">
+				<td class="avatar"><img src="../image/larva-prussian.png" alt=""></td>
 				<td class="name">Prussian</td>
-				<td class="skill">adasdas</td>
-				<td class="email"><a href="">zsdadasd</a></td>
-				<td class="phone">adasdas</td>
+				<td class="skill">ánh mắt assassin</td>
+				<td class="email"><a href="">ăn Yellow và Red</a></td>
+				<td class="phone">1kg</td>
 			</tr>
 		</table>
 	</main>
+	<script src="../js/script.js"></script>
+	<script src="../js/jquery-3.3.1.min.js"></script>
+	<script src="../js/jquery.tablesorter.js"></script>
+
 </body>
 </html>
