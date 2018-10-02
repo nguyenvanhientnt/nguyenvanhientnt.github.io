@@ -1,0 +1,481 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif, arial;
+}
+header{
+	width: 100%;
+	margin-bottom:5px;
+}
+nav{
+	max-width: 1160px;
+	margin: auto;
+	background: #403093;
+	position: relative;
+}
+.navbar-brand{
+	position: absolute;
+	left: 0;
+	bottom:0;
+}
+.w-nav{
+	width: 100%;
+	background: #403093;
+}
+
+.nav-item:hover{
+	transform: translateX(5px);
+	-webkit-transform: translateX(5px);
+	background: #95a5a6;
+	box-shadow: -7px 3px #4c4c4c;
+}
+
+.lat{
+	max-width: 1000px;
+	background: white;
+	margin: auto;
+	height: 50px;
+}
+.login{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+.lis{
+	
+	margin-top: 10px;
+	background: #403093;
+}
+
+.banner{
+    background-image: url('../image/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.banner-text{
+	width: 100%;
+	height: 38vw;
+	padding-top: 15%;
+}
+.card-title{
+	max-width: 40%;
+	margin:auto;
+
+	background: yellow;
+}
+
+main{
+	max-width: 1160px;
+	margin:auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+.schedule{
+	width: 75%;
+}
+.cards{
+	width: 100%;
+	background: red;
+	border-top: 5px solid #403093;
+}
+.schedule h4, .bxh h4{
+	padding-bottom: 10px;
+	color: #403093;
+	white-space: nowrap;
+}
+.text-date, .name-team{
+	color: #403093;
+}
+.text-date1{
+	padding-bottom: 5px;
+	color: #403093
+}
+/*bảng xếp hạng*/
+.bxh{
+	width: 25%;
+	padding-left: 15px;
+}
+.tabl{
+	width: 100%;
+}
+.color-tab, .color-tab1{
+	height: 40px;
+}
+.color-tab{
+	background: #403093;
+}
+.color-tab1{
+	background: #78BFF9;
+}
+.logo-title{
+	width: 80%;
+	margin:auto;
+}
+.logo-titl{
+	width: 100%;
+}
+.logo-title-img{
+	width: 40%;
+}
+.logo-title-img img{
+	width: 100%;
+	padding: 0 25% 0 25%;
+}
+.name-team{
+	font-size: 14px;
+	white-space: nowrap;
+}
+.content-title{
+	width: 20%;
+	padding-top: 25px;
+}
+.content-title .text-center{
+	white-space: nowrap;
+	color: #403093;
+	font-size: 18px;
+}
+.pre{
+	background-color: #403093;
+}
+/* img shop */
+
+.img-shop{
+	width: 25%;
+	padding: 10px 0 0 15px;
+
+}
+.img-shop img{
+	width: 100%;
+}
+
+/*new*/
+
+.new{
+	width: 75%;
+	height: 430px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+.new-content-title, .new-content-title{
+	padding-bottom: 15px;
+	font-size: 20px;
+	color: #403093;
+	font-weight: bold;
+	text-indent: 20px;
+}
+.new-content, .new-total{
+	width: 100%;
+}
+.img-fluid1{
+	width: 55%;
+	padding-right: 10px;
+}
+.new-content-total{
+	width: 45%;
+}
+.new-content-meidum{
+	width: 100%;
+	padding-bottom: 20px;
+}
+.img-fluid2{
+	width: 35%;
+}
+.new-description{
+	width: 65%;
+	background: pink;
+	padding: 5px;
+}
+.img-fluid1 img, .img-fluid2 img{
+	width: 100%;
+}
+
+
+
+/* danh sách cầu thủ */
+.player-list{
+	width: 100%;
+	height: 450px;
+}
+.player-list-content{
+	background: #a5a5f7;
+	width: 100%;
+}
+.player-list-member{
+	max-width: 1000px;
+	margin: auto;
+
+}
+.list-member{
+	width: 20%;
+	height: 250px;
+	padding:10px;
+}
+.list-member img{
+	width: 100%;
+	height: 250px;
+}
+
+
+
+/* new out */
+.new-out{
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+.new-out-banner{
+	width: 100%;
+	height: 37vw;
+	background-image: url('../image/newout1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.new-out-small{
+	width: 90%;
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+}
+.new-out-list{
+	width: 33.333333%;
+	padding:30px;
+	float: left;
+}
+.new-out-list img{
+	width: 100%;
+	height: 450px;
+}
+.new-out-description a{
+	text-align: center;
+}
+
+
+
+/* new in */
+.new-in{
+	width: 100%;
+	height: 400px;
+}
+.new-in-c{
+	width: 25%;
+	padding:10px;
+	float: left;
+}
+.new-in-content{
+	width: 100%;
+ 	height: 400px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.new-in-content img{
+	width: 100%;
+	height: 300px;
+}
+.new-in-description{
+	height: 100px;
+}
+
+/* video */
+.video{
+	width: 100%;
+	
+}
+.video-title{
+	padding-bottom: 15px;
+	text-indent: 20px;
+	padding-top: 20px;
+}
+.video-title a{
+	font-size: 20px;
+	color: #403093;
+	font-weight: bold;
+	
+}
+.video-content-1, .video-content-2{
+	width: 100%;
+}
+.video-1{
+	width: 50%;
+	height: 350px;
+	float: left;
+	padding-right: 2px;
+}
+.video-2{
+	width: 50%;
+	height: 350px;
+	float: left;
+	padding-left: 2px;
+}
+.video-content-2{
+	padding-top: 4px;
+}
+.video-3{
+	width: 100%;
+	height: 550px;
+}
+
+/* online */
+.onlinetv{
+	width: 100%;
+	padding-top: 2.5%;
+}
+.online-title{
+	padding-bottom: 15px;
+	font-size: 20px;
+	color: #403093;
+	font-weight: bold;
+	text-indent: 20px;
+}
+.logo-tv{
+	width: 14.2857%;
+	float: left;
+}
+.logo-tv img{
+	width: 100%;
+}
+.logo-online{
+	width: 100%;
+	padding-top: 0.5%;
+}
+.kc{
+	padding: 1% 2.5% 2% 2.5%;
+}
+.fpt{
+	padding: 2.5% 2% 0 2%;
+}
+.htv{
+	padding: 2.5% 2% 2% 2%;
+}
+.tv{
+	padding:1%;
+}
+.btv{
+	padding-top: .5%;
+}
+
+/*footer*/
+.container-fluid{
+	background-color: #403093;
+	height: 350px;
+}
+.container-footer{
+	max-width: 1000px;
+	margin:auto;
+	padding-top: 20px;
+}
+.row-logo1{
+	width: 35%;
+	margin: auto;
+}
+.row-small{
+	width: 100%;
+}
+.logo-donors{
+	width: 33.33333%;
+	float: left;
+	opacity: .3;
+	padding: 2%;
+}
+.logo-donors img{
+	width: 100%;
+}
+.logo-donors:hover{
+	opacity: 1;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .lis {
+       	width: 13%;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .schedule, .new, .img-shop, .list-member, .new-in-c{
+    	width: 100%;
+    }
+    .schedule-body{
+    	padding-bottom: 10px;
+    }
+    .bxh{
+    	width: 100%;
+    	padding-left: 0;
+    	padding-top: 10px;
+    }
+    .card-title p{
+    	font-size: 14px;
+    }
+    .card-title{
+		max-width: 300px;
+		margin:auto;
+	}
+	.banner-text{
+		padding-top: 0;
+	}
+	.new-content-title, .new-content-title{
+		text-align: center;
+	}
+	.lis{
+		width: 35%;
+	}
+	.navbar-toggler{
+		float: right;
+	}
+}
+/*@media only screen and (min-width: 500px) {
+	.lis{
+		width: 25%;
+	}
+}*/
+/*@media only screen and (max-width: 768px) {
+    .schedule{
+    	width: 100%;
+    }
+    .schedule-body{
+    	padding-bottom: 10px;
+    }
+    .bxh{
+    	width: 100%;
+    	padding-left: 0;
+    	padding-top: 10px;
+    }
+    .card-title p{
+    	font-size: 14px;
+    }
+    .card-title{
+		max-width: 300px;
+		margin:auto;
+	}
+	.banner-text{
+		padding-top: 0;
+	}
+	
+}*/
+
+
+.back-top{
+	position: relative;
+}
+.back-top a{
+	display: block;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	transform: translateX(-20px);
+	width: 4%;
+}
+.back-top img{
+	width: 100%;
+}
+.clear{
+	clear: both;
+}
+
+
