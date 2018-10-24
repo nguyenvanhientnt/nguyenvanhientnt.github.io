@@ -1,3 +1,12 @@
+$(document).ready(function() {
+    $(".my-progress-bar").circularProgress({
+        line_width: 10,
+        color: "#4682B4",
+        starting_position: 0, 
+        percent: 0,
+        percentage: true,
+    }).circularProgress('animate', 100, 200000);
+});
 let img = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16'];
 let current = null;
 let count = 0;
