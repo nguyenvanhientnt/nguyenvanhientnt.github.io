@@ -1,0 +1,118 @@
+.container{
+	padding-top: 30px;
+}
+h5{
+text-align: center;
+padding-top: 7px;
+}
+.collection-item{
+	font-weight: bold;
+}
+body{
+	background-image: url('1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container_{
+	max-width: 1000px;
+	margin: auto;
+}
+.row_{
+	width: 100%;
+}
+.col_{
+	width: 33.33333%;
+	float: left;
+	padding: 15px;
+}
+.card_{
+	width: 100%;
+	
+}
+.card1{
+	background: #6d4c41;
+	height: 45px;
+	transform: translateY(8px);
+	border-radius: 5px 5px 0 0;
+}
+.card2{
+	background: #ff4081;
+	height: 45px;
+	transform: translateY(8px);
+	border-radius: 5px 5px 0 0;
+}
+.card3{
+	background: #00e5ff;
+	height: 45px;
+	transform: translateY(8px);
+	border-radius: 5px 5px 0 0;
+}
+.far{
+	color: #01579b;
+	width: 10%;
+}
+.fas{
+	color: #d32f2f;
+	width: 10%;
+}
+.collection:hover{
+	background: blue;
+}
+.collection:hover .far,.collection:hover .fas {
+	display: block;
+}
+.content{
+	float: left;
+}
+.far, .fas{
+	float: right;
+	display: none;
+}
+.far:hover, .fas:hover{
+	display: block;
+}
+.input{
+	width: 100%;
+	background: white;
+	border-radius: 0 0 5px 5px;
+}
+.inputbox{
+	width: 90%;
+	margin:auto;
+	height: 65px;
+	position: relative;
+	margin-top: -15px;
+	transform: translateY(8px);
+}
+.inputbox input{
+	background: white;
+	font-size: 16px;
+	color: #263238;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+
+}
+.inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 15px 0;
+	font-size: 14px;
+	color: #263238;
+	pointer-events: none;
+	transition: .5s;
+}
+.inputbox input:focus ~ label, .inputbox input:valid ~ label{
+	top: -20px;
+	left: 0;
+	color: #00ceff;
+	font-size: 12px;
+}
+.inputbox input:focus{
+	border-bottom: 1px solid #00ceff;
+}
+.clear{
+	clear: both;
+}

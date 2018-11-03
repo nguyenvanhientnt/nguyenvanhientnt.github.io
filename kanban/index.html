@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Kanban-board</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="plugins/materialize.min.css">
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+    	<a href="#" class="brand-logo center">Kanban-board</a>
+    </div>
+</nav>
+
+<section class="container_">
+	<div class="row_">
+		<!-- col 1 -->
+		<div class="col_">
+			<div class="card_">
+				<div class="card1"><h5 class="white-text">TODO (4)</h5></div>
+				<div class="collection sorted-list">
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">1</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">2</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">3</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">4</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			    </div>
+			    <div class="input">
+				    <div class="inputbox">
+						<input type="text" name="" required="" placeholder="">
+						<label for="">New Job</label>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- col 2 -->
+		<div class="col_">
+			<div class="card_">
+				<div class="card2"><h5 class="white-text">DOING (1)</h5></div>
+				<div class="collection sorted-list">
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">5</a>
+			    
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			    </div>
+			    <div class="input">
+				    <div class="inputbox">
+						<input type="text" name="" required="" placeholder="">
+						<label for="">New Job</label>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<!-- col 2 -->
+		<div class="col_">
+			<div class="card_ ">
+				<div class="card3"><h5 class="white-text">DONE (3)</h5></div>
+				<div class="collection sorted-list">
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">6</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">7</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			        <div class="collection-item">
+			        	<a href="#!" class="content indigo-text text-darken-4">8</a>
+			        	<i class="fas fa-trash"></i>
+			        	<i class="far fa-edit"></i>
+			        	<div class="clear"></div>
+			        </div>
+			    </div>
+			    <div class="input">
+				    <div class="inputbox">
+						<input type="text" name="" required="" placeholder="">
+						<label for="">New Job</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>	
+	</div>
+</section>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="plugins/jquery-ui.min.js"></script>
+	<script src="plugins/materialize.min.js"></script>
+	<script>
+		$(function(){
+			$('.sorted-list').sortable({
+				connectWith: ".sorted-list",
+				placeholder: "ui-state-highlight",
+			});
+		});
+	</script>
+</body>
+</html>
