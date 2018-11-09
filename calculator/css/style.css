@@ -5,7 +5,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
-	background-image: url('https://www.google.com.vn/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwigpsT28sbeAhUMvLwKHSwnBp0QjRx6BAgBEAQ&url=https%3A%2F%2Fwallhere.com%2Fvi%2Fwallpaper%2F99354&psig=AOvVaw2ozhe1asO-dzvJIAbPVl8H&ust=1541838693015010');
+	background-image: url(https://www.google.com.vn/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwigpsT28sbeAhUMvLwKHSwnBp0QjRx6BAgBEAQ&url=https%3A%2F%2Fwallhere.com%2Fvi%2Fwallpaper%2F99354&psig=AOvVaw2ozhe1asO-dzvJIAbPVl8H&ust=1541838693015010);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
